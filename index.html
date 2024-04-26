@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>reFilc Sticker Map</title>
+    <!-- Base crap for map -->
     <link rel="stylesheet" href="/leaflet/leaflet.css">
     <script src="/leaflet/leaflet.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+    <!-- Epic doxxer -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js"
+        charset="utf-8"></script>
     <style>
         body {
             height: 100%;
@@ -21,13 +25,19 @@
     <div id="map" style="height: 10px;"></div>
     <script>
         var map = L.map('map', { attributionControl: false }).setView([47.184, 19.509], 8);
+        // doxx the user
         L.control.locate({ setView: false }).addTo(map);
+        // add idk something
         L.control.scale().addTo(map);
-        L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution('&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>').addTo(map);
+        // add attribution 🤑🤑
+        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>').addTo(map);
         L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<a href="https://refilc.hu">reFilc</a> Sticker Map').addTo(map);
+        // tell the browser to load the fucking map
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        // this is how 2 make marker
         L.marker([47.4262, 19.0682]).addTo(map)
             .bindPopup('Körte?')
+        //
     </script>
     <!-- Do not remove or the fucking map can't resize -->
     <script src="dynamicheight.js"></script>
