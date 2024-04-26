@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Stickermap</title>
+    <link rel="stylesheet" href="/leaflet/leaflet.css">
+    <script src="/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map" style="height: 10px;"></div>
+    <script>
+        var map = L.map('map', { attributionControl: false }).setView([47.184, 19.509], 8);
+        L.control.locate({ setView: false }).addTo(map);
+        L.control.scale().addTo(map);
+        L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution('&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>').addTo(map);
+        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<a href="https://refilc.hu">reFilc</a> Sticker Map').addTo(map);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        L.marker([47.4262, 19.0682]).addTo(map)
+            .bindPopup('Körte?')
+    </script>
+    <!-- Do not remove or the fucking map can't resize -->
+    <script src="dynamicheight.js"></script>
+</body>
+
+</html>
