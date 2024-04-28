@@ -35,7 +35,16 @@
         const googleStreets = L.tileLayer('https://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
         const googleHybrid = L.tileLayer('https://{s}.google.com/vt?lyrs=s,h&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
         const googleTerrain = L.tileLayer('https://{s}.google.com/vt?lyrs=p&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
-        var markers = L.layerGroup();
+        var stickerMarkers = L.layerGroup();
+        const stickerIcon = L.icon({
+            iconUrl: '/leaflet/images/sticker.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [0, -41],
+            shadowUrl: '/leaflet/images/marker-shadow.png',
+            shadowSize: [25, 41],
+            shadowAnchor: [6, 41]
+        });
     </script>
     <script>
         var map = L.map('map', { attributionControl: false, minZoom: 8 }).setView([47.184, 19.509], 8);
@@ -45,14 +54,14 @@
         L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<div><p style="display: inline">Térképadatok &copy;2024</p><p style="display: inline"> | </p><a href="https://www.google.com/intl/hu_HU/help/terms_maps.html" target="_blank" rel="noopener" style="display: inline">Feltételek</a></div>').addTo(map);
         L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution('<img src="googlelogo_color_272x92dp.png" alt="google" width="52px">').addTo(map);
         googleStreets.addTo(map);
-        markers.addTo(map);
+        stickerMarkers.addTo(map);
         var baseLayers = {
             "Google Alap": googleStreets,
             "Google Műhold": googleHybrid,
             "Google Domborzat": googleTerrain
         };
         var overlayLayers = {
-            "Matricák": markers
+            "Matricák": stickerMarkers
         };
         L.control.layers(baseLayers, overlayLayers, {position:'bottomleft'}).addTo(map);
     </script>
@@ -62,9 +71,9 @@
             .then(data => {
                 data.forEach(item => {
                     console.log("Found entry: " + item.popup)
-                    var marker= L.marker([item.z, item.x])
+                    var marker= L.marker([item.z, item.x], {icon: stickerIcon})
                         .bindPopup(item.popup);
-                    markers.addLayer(marker);
+                    stickerMarkers.addLayer(marker);
                 });
             });
     </script>
