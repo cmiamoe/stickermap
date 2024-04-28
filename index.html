@@ -24,7 +24,7 @@
 <body>
     <div id="map" style="height: 10px;"></div>
     <script>
-        var map = L.map('map', { attributionControl: false, maxZoom: 8 }).setView([47.184, 19.509], 8);
+        var map = L.map('map', { attributionControl: false, minZoom: 8 }).setView([47.184, 19.509], 8);
         // doxx the user
         L.control.locate({ setView: false }).addTo(map);
         // add idk something
