@@ -39,21 +39,12 @@
         var kimaMarkers = L.layerGroup();
         const stickerIcon = L.icon({
             iconUrl: '/leaflet/images/sticker.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [0, -41],
-            shadowUrl: '/leaflet/images/marker-shadow.png',
-            shadowSize: [25, 41],
-            shadowAnchor: [6, 41]
-        });
-        const kimaIcon = L.icon({
-            iconUrl: '/leaflet/images/sultfasz.png',
             iconSize: [41, 41],
             iconAnchor: [0, 41],
             popupAnchor: [34, -34],
             shadowUrl: '/leaflet/images/marker-shadow.png',
-            shadowSize: [25, 41],
-            shadowAnchor: [0, 41]
+            shadowSize: [0, 0],
+            shadowAnchor: [0, 0]
         })
     </script>
     <script>
@@ -72,7 +63,6 @@
         };
         var overlayLayers = {
             "Matricák": stickerMarkers,
-            "Kima Dölt filc cucc": kimaMarkers
         };
         L.control.layers(baseLayers, overlayLayers, {position:'bottomleft'}).addTo(map);
     </script>
@@ -87,11 +77,6 @@
                         <p>${item.popup.address}</p>
                         <img src="${item.popup.image}" width="100%">`);
                     stickerMarkers.addLayer(marker);
-                    var marker2= L.marker([item.z, item.x], {icon: kimaIcon})
-                        .bindPopup(`<h3>${item.popup.title}</h3>
-                        <p>${item.popup.address}</p>
-                        <img src="${item.popup.image}" width="100%">`);
-                    kimaMarkers.addLayer(marker2);
                 });
             });
     </script>
