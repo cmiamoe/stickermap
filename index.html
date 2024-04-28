@@ -14,9 +14,17 @@
     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js"
         charset="utf-8"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
             height: 100%;
             margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .leaflet-container {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+        .leaflet-control-attribution, .leaflet-control-scale-line {
+            color: #000000 !important;
         }
     </style>
 </head>
@@ -24,28 +32,39 @@
 <body>
     <div id="map" style="height: 10px;"></div>
     <script>
-        var map = L.map('map', { attributionControl: false, minZoom: 8 }).setView([47.184, 19.509], 8);
-        // doxx the user
-        L.control.locate({ setView: false }).addTo(map);
-        // add idk something
-        L.control.scale().addTo(map);
-        // add attribution 🤑🤑
-        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<a href="https://refilc.hu">reFilc</a> Sticker Map').addTo(map);
-        // Attribution for google maps, so they don't fuck us in the ass
-        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<div><p style="display: inline">Térképadatok &copy;2024</p><p style="display: inline"> | </p><a href="https://www.google.com/intl/hu_HU/help/terms_maps.html" target="_blank" rel="noopener" style="display: inline">Feltételek</a></div>').addTo(map);
-        L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution('<img src="googlelogo_color_272x92dp.png" alt="google" width="52px">').addTo(map);
-        // tell the browser to load the fucking map
-        L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {maxZoom: 20, subdomains: ['mt0', 'mt1', 'mt2', 'mt3']}).addTo(map);
+        const googleStreets = L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
+        const googleHybrid = L.tileLayer('http://{s}.google.com/vt?lyrs=s,h&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
+        const googleTerrain = L.tileLayer('http://{s}.google.com/vt?lyrs=p&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
+        var markers = L.layerGroup();
     </script>
     <script>
-        // parse data.json for entries
+        var map = L.map('map', { attributionControl: false, minZoom: 8 }).setView([47.184, 19.509], 8);
+        L.control.locate({ setView: false }).addTo(map);
+        L.control.scale({ imperial: false }).addTo(map);
+        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<a href="https://refilc.hu">reFilc</a> Sticker Map').addTo(map);
+        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<div><p style="display: inline">Térképadatok &copy;2024</p><p style="display: inline"> | </p><a href="https://www.google.com/intl/hu_HU/help/terms_maps.html" target="_blank" rel="noopener" style="display: inline">Feltételek</a></div>').addTo(map);
+        L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution('<img src="googlelogo_color_272x92dp.png" alt="google" width="52px">').addTo(map);
+        googleStreets.addTo(map);
+        markers.addTo(map);
+        var baseLayers = {
+            "Google Alap": googleStreets,
+            "Google Műhold": googleHybrid,
+            "Google Domborzat": googleTerrain
+        };
+        var overlayLayers = {
+            "Matricák": markers
+        };
+        L.control.layers(baseLayers, overlayLayers, {position:'bottomleft'}).addTo(map);
+    </script>
+    <script>
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
                 data.forEach(item => {
                     console.log("Found entry: " + item.popup)
-                    L.marker([item.z, item.x]).addTo(map)
+                    var marker= L.marker([item.z, item.x])
                         .bindPopup(item.popup);
+                    markers.addLayer(marker);
                 });
             });
     </script>
