@@ -40,6 +40,7 @@
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
+                console.log("Found entry: " + item.popup)
                 data.forEach(item => {
                     L.marker([item.z, item.x]).addTo(map)
                         .bindPopup(item.popup);
