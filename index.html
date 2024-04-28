@@ -70,9 +70,11 @@
             .then(response => response.json())
             .then(data => {
                 data.forEach(item => {
-                    console.log("Found entry: " + item.popup)
+                    console.log("Found entry: " + item.popup.address)
                     var marker= L.marker([item.z, item.x], {icon: stickerIcon})
-                        .bindPopup(item.popup);
+                        .bindPopup(`<h3>${item.popup.title}</h3>
+                        <p>${item.popup.address}</p>
+                        <img src="${item.popup.image}" width="100%">`);
                     stickerMarkers.addLayer(marker);
                 });
             });
