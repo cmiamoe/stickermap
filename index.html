@@ -32,7 +32,7 @@
         // add attribution 🤑🤑
         L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<a href="https://refilc.hu">reFilc</a> Sticker Map').addTo(map);
         // Attribution for google maps, so they don't fuck us in the ass
-        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('Térképadatok &copy;2024').addTo(map);
+        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<div><p style="display: inline">Térképadatok &copy;2024</p><p style="display: inline"> | </p><a href="https://www.google.com/intl/hu_HU/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0); display: inline">Feltételek</a></div>').addTo(map);
         L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution('<img src="googlelogo_color_272x92dp.png" alt="google" width="52px">').addTo(map);
         // tell the browser to load the fucking map
         L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {maxZoom: 20, subdomains: ['mt0', 'mt1', 'mt2', 'mt3']}).addTo(map);
