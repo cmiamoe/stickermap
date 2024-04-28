@@ -33,7 +33,8 @@
         L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>').addTo(map);
         L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<a href="https://refilc.hu">reFilc</a> Sticker Map').addTo(map);
         // tell the browser to load the fucking map
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        //L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {maxZoom: 20, subdomains: ['mt0', 'mt1', 'mt2', 'mt3']}).addTo(map);
     </script>
     <script>
         // parse data.json for entries
