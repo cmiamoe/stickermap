@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>reFilc Sticker Map</title>
-    <!-- Base crap for map -->
+    <title>reFilc Matrica térkép</title>
     <link rel="stylesheet" href="/leaflet/leaflet.css">
-    <script src="/leaflet/leaflet.js"></script>
-    <!-- Epic doxxer -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js"
-        charset="utf-8"></script>
+    <script src="/leaflet/leaflet.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js" charset="utf-8"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
@@ -28,15 +23,18 @@
         }
     </style>
 </head>
-
 <body>
     <div id="map" style="height: 10px;"></div>
-    <script>
+    <script id="variables">
         const googleStreets = L.tileLayer('https://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
         const googleHybrid = L.tileLayer('https://{s}.google.com/vt?lyrs=s,h&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
         const googleTerrain = L.tileLayer('https://{s}.google.com/vt?lyrs=p&x={x}&y={y}&z={z}',{maxZoom: 20,subdomains:['mt0','mt1','mt2','mt3']});
+        var baseLayers = {
+            "Google Alap": googleStreets,
+            "Google Domborzat": googleTerrain,
+            "Google Műhold": googleHybrid
+        };
         var stickerMarkers = L.layerGroup();
-        var kimaMarkers = L.layerGroup();
         const stickerIcon = L.icon({
             iconUrl: '/leaflet/images/sticker.png',
             iconSize: [41, 41],
@@ -46,24 +44,25 @@
             shadowSize: [0, 0],
             shadowAnchor: [0, 0]
         })
+        var overlayLayers = {
+            "Matricák": stickerMarkers,
+        };
     </script>
     <script>
         var map = L.map('map', { attributionControl: false, minZoom: 8 }).setView([47.184, 19.509], 8);
         L.control.locate({ setView: false }).addTo(map);
         L.control.scale({ imperial: false }).addTo(map);
-        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<a href="https://refilc.hu">reFilc</a> Sticker Map').addTo(map);
-        L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution('<div><p style="display: inline">Térképadatok &copy;2024</p><p style="display: inline"> | </p><a href="https://www.google.com/intl/hu_HU/help/terms_maps.html" target="_blank" rel="noopener" style="display: inline">Feltételek</a></div>').addTo(map);
-        L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution('<img src="googlelogo_color_272x92dp.png" alt="google" width="52px">').addTo(map);
+        L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution(`
+        <img src="googlelogo_color_272x92dp.png" alt="google" width="52px">
+        <div>
+            <p style="display: inline">Térképadatok &copy;2024</p>
+            <p style="display: inline"> | </p>
+            <a href="https://www.google.com/intl/hu_HU/help/terms_maps.html" target="_blank" rel="noopener" style="display: inline">Feltételek</a>
+        </div>
+        <a href="https://refilc.hu">reFilc</a> Matrica Térkép
+        `).addTo(map);
         googleStreets.addTo(map);
         stickerMarkers.addTo(map);
-        var baseLayers = {
-            "Google Alap": googleStreets,
-            "Google Domborzat": googleTerrain,
-            "Google Műhold": googleHybrid
-        };
-        var overlayLayers = {
-            "Matricák": stickerMarkers,
-        };
         L.control.layers(baseLayers, overlayLayers, {position:'bottomleft'}).addTo(map);
     </script>
     <script>
@@ -73,9 +72,11 @@
                 data.forEach(item => {
                     console.log("Found entry: " + item.popup.address)
                     var marker= L.marker([item.z, item.x], {icon: stickerIcon})
-                        .bindPopup(`<h3>${item.popup.title}</h3>
-                        <p>${item.popup.address}</p>
-                        <img src="${item.popup.image}" width="100%">`);
+                        .bindPopup(`
+                            <h3>${item.popup.title}</h3>
+                            <p>${item.popup.address}</p>
+                            <img src="${item.popup.image}" width="100%">
+                        `);
                     stickerMarkers.addLayer(marker);
                 });
             });
@@ -83,5 +84,4 @@
     <!-- Do not remove or the fucking map can't resize -->
     <script src="dynamicheight.js"></script>
 </body>
-
 </html>
