@@ -21,7 +21,7 @@
         "z": 47.422053,
         "x": 19.0661375,
         "popup": {
-            "title": "Ismeretlen",
+            "title": "Csepel vasútállomás",
             "address": "Budapest, XXI. kerület",
             "image": "/pictures/placeholder.png"
         }
@@ -30,7 +30,7 @@
         "z": 47.3416637,
         "x": 19.0408705,
         "popup": {
-            "title": "Ismeretlen",
+            "title": "Miklós Pláza megálló",
             "address": "Szigetszentmiklós, 51101 14-10, 2310",
             "image": "/pictures/placeholder.png"
         }
@@ -57,8 +57,8 @@
         "z": 47.5182284,
         "x": 18.9594895,
         "popup": {
-            "title": "Ismeretlen",
-            "address": "Budapest, János-hegy (Erzsébet kilátó), Erzsébet kilátó út, Emléktábla, 1121",
+            "title": "Erzsébet kilátó",
+            "address": "Budapest, János-hegy, Erzsébet kilátó út, 1121",
             "image": "/pictures/placeholder.png"
         }
     },
@@ -66,7 +66,7 @@
         "z": 47.5110861,
         "x": 18.9694946,
         "popup": {
-            "title": "Ismeretlen",
+            "title": "Zugliget?",
             "address": "Budapest, Szilassy út 6b, 1121",
             "image": "/pictures/placeholder.png"
         }
@@ -84,7 +84,7 @@
         "z": 47.4966835,
         "x": 19.0702821,
         "popup": {
-            "title": "Ismeretlen",
+            "title": "Blaha Lújza tér",
             "address": "Budapest, Blaha Lújza tér, 1085",
             "image": "/pictures/placeholder.png"
         }
@@ -93,7 +93,7 @@
         "z": 47.5002164,
         "x": 19.081893,
         "popup": {
-            "title": "Ismeretlen",
+            "title": "Keleti pályaudvar?",
             "address": "Budapest, Baross téri aluljáró, 1087",
             "image": "/pictures/placeholder.png"
         }
