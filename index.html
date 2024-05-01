@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reFilc Matricatérkép</title>
 
+    <link rel="preload" href="/pictures/filc.png" as="image">
+    <link rel="preload" href="/pictures/filcMono.png" as="image">
+    <link rel="preload" href="/pictures/placeholder.png" as="image">
+
+    <link rel="preconnect" href="https://unpkg.com"/>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js" charset="utf-8" crossorigin=""></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css" crossorigin=""/>
@@ -13,10 +21,6 @@
     <link rel="stylesheet" href="spinner.css">
 
     <link rel="shortcut icon" href="/pictures/filc.png" type="image/x-icon">
-    <!-- Preload some of the icons -->
-    <link rel="preload" href="/pictures/filc.png" as="image">
-    <link rel="preload" href="/pictures/filcMono.png" as="image">
-    <link rel="preload" href="/pictures/placeholder.png" as="image">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
