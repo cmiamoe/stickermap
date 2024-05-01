@@ -22,17 +22,17 @@ body {
     border: 2px solid rgba(0, 0, 0, 0.2) !important;
 }
 .leaflet-bar a {
-    background-color: #DAE4F7 !important;
+    background-color: #FBFCFF !important;
     color: #3F444F !important;
     border-bottom: none !important;
 }
 .leaflet-bar a:hover {
-    background-color: #B9C8E5 !important;
+    background-color: #DAE4F7 !important;
     color: #0A2456 !important;
 }
 .leaflet-control-scale-line {
-    background-color: #DAE4F7 !important;
-    background: #DAE4F7 !important;
+    background-color: #FBFCFF !important;
+    background: #FBFCFF !important;
     text-shadow: none !important;
     border: 2px solid rgba(0, 0, 0, 0.2) !important;
     border-radius: 4px !important;
@@ -43,11 +43,11 @@ body {
     height: 30px !important;
 }
 .leaflet-control-layers {
-    background-color: #DAE4F7 !important;
+    background-color: #FBFCFF !important;
     border: 2px solid rgba(0, 0, 0, 0.2) !important;
 }
 .leaflet-control-attribution {
-    background-color: #DAE4F7 !important;
+    background-color: #FBFCFF !important;
     margin-bottom: 10px !important;
     margin-right: 10px !important;
     border: 2px solid rgba(0, 0, 0, 0.2) !important;
