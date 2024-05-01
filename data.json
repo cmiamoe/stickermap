@@ -108,5 +108,15 @@
             "image": "/pictures/placeholder.png"
         },
         "type": "partial"
+    },
+    {
+        "z": 80.1960009,
+        "x": 32.5608695,
+        "popup": {
+            "title": "Szuper titkos reFilc HQ",
+            "address": "Combine Citadel, 0000",
+            "image": "/pictures/80.1960009_32.5608695.webp"
+        },
+        "type": "complete"
     }
 ]
