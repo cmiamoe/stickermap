@@ -5,7 +5,7 @@
         "popup": {
             "title": "Vasútállomás",
             "address": "Siófok, Kálmán Imre stny., 8600",
-            "image": "/pictures/46.9077157_18.0545054.webp"
+            "image": "/data/images/46.9077157_18.0545054.webp"
         },
         "type": "communityfound",
         "finder": "chromium" 
@@ -16,7 +16,7 @@
         "popup": {
             "title": "Ismeretlen",
             "address": "Budapest, Merkúr u. 13, 1214",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -27,7 +27,7 @@
         "popup": {
             "title": "Csepel vasútállomás",
             "address": "Budapest, XXI. kerület",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -38,7 +38,7 @@
         "popup": {
             "title": "Miklós Pláza megálló",
             "address": "Szigetszentmiklós, 51101 14-10, 2310",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -49,7 +49,7 @@
         "popup": {
             "title": "Ismeretlen",
             "address": "Szigetszentmiklós, Tököli út 17-19, 2310",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -60,7 +60,7 @@
         "popup": {
             "title": "Ismeretlen",
             "address": "Szigetszentmiklós, 2310",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -71,7 +71,7 @@
         "popup": {
             "title": "Erzsébet kilátó",
             "address": "Budapest, János-hegy, Erzsébet kilátó út, 1121",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -82,7 +82,7 @@
         "popup": {
             "title": "Zugliget?",
             "address": "Budapest, Szilassy út 6b, 1121",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -93,7 +93,7 @@
         "popup": {
             "title": "Ismeretlen",
             "address": "Budapest, Igló u. 2, 1193",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -104,7 +104,7 @@
         "popup": {
             "title": "Blaha Lújza tér",
             "address": "Budapest, Blaha Lújza tér, 1085",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -115,7 +115,7 @@
         "popup": {
             "title": "Keleti pályaudvar?",
             "address": "Budapest, Baross téri aluljáró, 1087",
-            "image": "/pictures/placeholder.png"
+            "image": "/icons/placeholder.png"
         },
         "type": "partial",
         "finder": ""
@@ -126,7 +126,7 @@
         "popup": {
             "title": "Szuper titkos reFilc HQ",
             "address": "Combine Citadel, 0000",
-            "image": "/pictures/80.1960009_32.5608695.webp"
+            "image": "/data/images/80.1960009_32.5608695.webp"
         },
         "type": "complete",
         "finder": ""

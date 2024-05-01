@@ -6,3 +6,13 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif !important;
 }
+.image-container {
+    position: relative;
+}
+.image-container img {
+    display:block;
+}
+img.pending {
+    filter: blur(10x) opacity(0.5);
+    transition: filter 1s;
+}
