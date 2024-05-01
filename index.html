@@ -86,7 +86,7 @@
         };
     </script>
     <script>
-        var map = L.map('map', { attributionControl: false, minZoom: 15 }).setView([47.184, 19.509], 8);
+        var map = L.map('map', { attributionControl: false, minZoom: 4 }).setView([47.184, 19.509], 8);
         L.control.locate({ setView: false }).addTo(map);
         L.control.scale({ imperial: false }).addTo(map);
         L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution(`
