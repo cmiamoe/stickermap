@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>reFilc Matrica térkép</title>
+    <title>reFilc Matricatérkép</title>
     <link rel="stylesheet" href="/leaflet/leaflet.css">
     <script src="/leaflet/leaflet.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css"/>
@@ -60,7 +60,7 @@
         L.control.locate({ setView: false }).addTo(map);
         L.control.scale({ imperial: false }).addTo(map);
         L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution(`
-        <a href="https://refilc.hu">reFilc</a> Matrica Térkép
+        <a href="https://refilc.hu">reFilc</a> MatricaTérkép
         `).addTo(map);
         Standard.addTo(map);
         stickerMarkers.addTo(map);
