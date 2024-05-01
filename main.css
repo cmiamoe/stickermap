@@ -39,13 +39,6 @@ body {
     background-color: #DAE4F7 !important;
     color: #0A2456 !important;
 }
-.leaflet-control-scale-line {
-    background-color: #FBFCFF !important;
-    background: #FBFCFF !important;
-    text-shadow: none !important;
-    border: 2px solid rgba(0, 0, 0, 0.2) !important;
-    border-radius: 4px !important;
-}
 .leaflet-control-layers-toggle {
     background-image: url(/icons/layers.svg) !important;
     width: 30px !important;
@@ -62,8 +55,4 @@ body {
     border: 2px solid rgba(0, 0, 0, 0.2) !important;
     border-radius: 4px !important;
     z-index: 100 !important;
-}
-.leaflet-control-scale {
-    margin-bottom: 10px !important;
-    margin-left: 10px !important;
 }
