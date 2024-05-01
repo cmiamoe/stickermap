@@ -9,6 +9,15 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+.leaflet-left, .leaflet-top {
+    margin: 16px;
+}
+.leaflet-control {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
 .icon {
     width: 30px;
     height:25px;
