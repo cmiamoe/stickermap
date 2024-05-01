@@ -7,5 +7,95 @@
             "address": "Siófok, Kálmán Imre stny., 8600",
             "image": "/pictures/46.9077157_18.0545054.webp"
         }
+    },
+    {
+        "z": 47.4095847,
+        "x": 19.0573981,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Budapest, Merkúr u. 13, 1214",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.422053,
+        "x": 19.0661375,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Budapest, XXI. kerület",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.3416637,
+        "x": 19.0408705,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Szigetszentmiklós, 51101 14-10, 2310",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.3448023,
+        "x": 19.0422953,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Szigetszentmiklós, Tököli út 17-19, 2310",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.3583066,
+        "x": 19.0318482,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Szigetszentmiklós, 2310",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.5182284,
+        "x": 18.9594895,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Budapest, János-hegy (Erzsébet kilátó), Erzsébet kilátó út, Emléktábla, 1121",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.5110861,
+        "x": 18.9694946,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Budapest, Szilassy út 6b, 1121",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.4524268,
+        "x": 19.1570478,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Budapest, Igló u. 2, 1193",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.4966835,
+        "x": 19.0702821,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Budapest, Blaha Lújza tér, 1085",
+            "image": "/pictures/placeholder.png"
+        }
+    },
+    {
+        "z": 47.5002164,
+        "x": 19.081893,
+        "popup": {
+            "title": "Ismeretlen",
+            "address": "Budapest, Baross téri aluljáró, 1087",
+            "image": "/pictures/placeholder.png"
+        }
     }
 ]
