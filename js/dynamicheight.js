@@ -1,4 +1,4 @@
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     document.getElementById('map').style.height = window.innerHeight + 'px';
 });
 
