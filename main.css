@@ -1,0 +1,37 @@
+body {
+    background-color: #E7EFFF;
+}
+
+.icon {
+    width: 30px;
+    height:25px;
+}
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+    display: flex !important;
+    align-items: center;
+    text-indent: 0 !important;
+}
+.leaflet-bar a {
+    background-color: #DAE4F7 !important;
+    color: #3F444F !important;
+    border-bottom: none !important;
+}
+.leaflet-bar a:hover {
+    background-color: #B9C8E5 !important;
+    color: #0A2456 !important;
+}
+.leaflet-control-scale-line {
+    background-color: #DAE4F780 !important;
+    background: #DAE4F780 !important;
+    color: #3F444F !important;
+    text-shadow: none !important;
+}
+.leaflet-control-layers-toggle {
+    background-image: url(/icons/layers.svg) !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+.leaflet-control-layers {
+    background-color: #DAE4F7 !important;
+    border: 2px solid rgba(0, 0, 0, 0.2) !important;
+}

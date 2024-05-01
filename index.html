@@ -2,6 +2,7 @@
 <html lang="hu">
     <!-- Plaintext html my beloved -->
 <head>
+    <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reFilc Matricatérkép</title>
@@ -14,6 +15,7 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js" charset="utf-8" crossorigin=""></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css" crossorigin=""/>
@@ -30,9 +32,6 @@
         }
         .leaflet-container {
             font-family: 'Montserrat', sans-serif !important;
-        }
-        .leaflet-control-attribution, .leaflet-control-scale-line {
-            color: #000000 !important;
         }
 
         .image-container {
@@ -90,7 +89,8 @@
         };
     </script>
     <script>
-        var map = L.map('map', { attributionControl: false, minZoom: 6 }).setView([47.184, 19.509], 8);
+        var map = L.map('map', { attributionControl: false, minZoom: 6, zoomControl: false }).setView([47.184, 19.509], 8);
+        L.control.zoom({ position: 'topleft', zoomInText: '<img src="/icons/plus.svg">', zoomOutText: '<img src="/icons/minus.svg">'}).addTo(map);
         L.control.locate({ setView: false }).addTo(map);
         L.control.scale({ imperial: false }).addTo(map);
         L.control.attribution({ position: 'bottomright', prefix: false}).addAttribution(`
