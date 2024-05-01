@@ -23,7 +23,51 @@
     height: 32px !important;
     line-height: 32px !important;
 }
-/* Zoom + Gps buttons */
+.leaflet-touch .leaflet-control-layers-toggle {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 8px !important;
+}
+.leaflet-control-layers {
+    background: none !important;
+}
+/* Default border */
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+    border: none !important;
+}
+/* Rounding */
+.leaflet-touch .leaflet-bar a:first-child {
+    border-top-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    box-shadow: 0 1px 2.1px 0 #00000075;
+}
+.leaflet-touch .leaflet-bar a:last-child {
+    border-bottom-right-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    box-shadow: 0 1px 2.1px 0 #00000075;
+}
+/* Borders */
+.leaflet-control-zoom-in {
+    border: 1px solid #CEDBF5 !important;
+}
+.leaflet-control-zoom-out {
+    border: 1px solid #CEDBF5 !important;
+    border-top: none !important;
+}
 .leaflet-control-locate {
     margin-top: 8px !important;
+}
+a.leaflet-bar-part.leaflet-bar-part-single {
+    border: 1px solid #CEDBF5 !important;
+}
+a.leaflet-control-layers-toggle {
+    background-color: #FBFCFF !important;
+    border: 1px solid #CEDBF5 !important;
+    box-shadow: 0 1px 2.1px 0 #00000075;
+}
+section.leaflet-control-layers-list {
+    background-color: #FBFCFF !important;
+}
+.leaflet-bar a{
+    background-color: #FBFCFF !important;
 }

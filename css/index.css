@@ -6,13 +6,43 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif !important;
 }
+
 .image-container {
     position: relative;
 }
+
 .image-container img {
-    display:block;
+    display: block;
 }
+
 img.pending {
     filter: blur(10x) opacity(0.5);
     transition: filter 1s;
+}
+
+.leaflet-container {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.navy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+a.leaflet-bar-part.leaflet-bar-part-single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px !important;
+    height: 32px !important;
+}
+.leaflet-control-locate-location-arrow {
+    background-image: url(/icons/locate.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    width: 100% !important;
+    height: 100% !important;
 }
