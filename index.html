@@ -3,19 +3,20 @@
     <!-- Plaintext html my beloved -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reFilc Matricatérkép</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js" charset="utf-8" crossorigin=""></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css" crossorigin=""/>
     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js" charset="utf-8" crossorigin=""></script>
+    <link rel="stylesheet" href="spinner.css">
 
     <link rel="shortcut icon" href="/pictures/filc.png" type="image/x-icon">
     <!-- Preload some of the icons -->
-    <link rel="preload" href="/pictures/filc.png">
-    <link rel="preload" href="/pictures/filcMono.png">
-    <link rel="preload" href="/pictures/placeholder.png">
+    <link rel="preload" href="/pictures/filc.png" as="image">
+    <link rel="preload" href="/pictures/filcMono.png" as="image">
+    <link rel="preload" href="/pictures/placeholder.png" as="image">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
@@ -28,6 +29,13 @@
         }
         .leaflet-control-attribution, .leaflet-control-scale-line {
             color: #000000 !important;
+        }
+
+        .image-container {
+            position: relative;
+        }
+        .image-container img {
+            display: block
         }
     </style>
 </head>
@@ -97,7 +105,23 @@
                         .bindPopup(`
                             <h3>${item.popup.title}</h3>
                             <p>${item.popup.address}</p>
-                            <img src="${item.popup.image}" width="100%">
+                            <div class="image-container">
+                                <div id="${item.popup.image}" class="spinner center">
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                    <div class="spinner-blade"></div>
+                                </div>
+                                <img src="${item.popup.image}" width="100%" onload="document.getElementById('${item.popup.image}').style.display ='none'">
+                            </div>
                         `);
                     MarkerGroup.addLayer(marker);
                 });
