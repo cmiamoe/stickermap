@@ -7,7 +7,8 @@
             "address": "Siófok, Kálmán Imre stny., 8600",
             "image": "/pictures/46.9077157_18.0545054.webp"
         },
-        "type": "complete"
+        "type": "communityfound",
+        "finder": "chromium" 
     },
     {
         "z": 47.4095847,
@@ -17,7 +18,8 @@
             "address": "Budapest, Merkúr u. 13, 1214",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.422053,
@@ -27,7 +29,8 @@
             "address": "Budapest, XXI. kerület",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.3416637,
@@ -37,7 +40,8 @@
             "address": "Szigetszentmiklós, 51101 14-10, 2310",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.3448023,
@@ -47,7 +51,8 @@
             "address": "Szigetszentmiklós, Tököli út 17-19, 2310",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.3583066,
@@ -57,7 +62,8 @@
             "address": "Szigetszentmiklós, 2310",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.5182284,
@@ -67,7 +73,8 @@
             "address": "Budapest, János-hegy, Erzsébet kilátó út, 1121",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.5110861,
@@ -77,7 +84,8 @@
             "address": "Budapest, Szilassy út 6b, 1121",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.4524268,
@@ -87,7 +95,8 @@
             "address": "Budapest, Igló u. 2, 1193",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.4966835,
@@ -97,7 +106,8 @@
             "address": "Budapest, Blaha Lújza tér, 1085",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 47.5002164,
@@ -107,7 +117,8 @@
             "address": "Budapest, Baross téri aluljáró, 1087",
             "image": "/pictures/placeholder.png"
         },
-        "type": "partial"
+        "type": "partial",
+        "finder": ""
     },
     {
         "z": 80.1960009,
@@ -117,6 +128,7 @@
             "address": "Combine Citadel, 0000",
             "image": "/pictures/80.1960009_32.5608695.webp"
         },
-        "type": "complete"
+        "type": "complete",
+        "finder": ""
     }
 ]
