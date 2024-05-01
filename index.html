@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="hu">
     <!-- Plaintext html my beloved -->
-    <!-- Written by BalazsManus -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>reFilc Matricatérkép</title>
+
     <link rel="stylesheet" href="/leaflet/leaflet.css">
     <script src="/leaflet/leaflet.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
     <link rel="shortcut icon" href="/leaflet/images/sticker.png" type="image/x-icon">
+    <!-- Preload some of the icons -->
+    <link rel="preload" href="/leaflet/images/sticker.png">
+    <link rel="preload" href="/leaflet/images/partialSticker.png">
+    <link rel="preload" href="/pictures/placeholder.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
@@ -49,7 +54,7 @@
             iconSize: [41, 41],
             iconAnchor: [0, 41],
             popupAnchor: [34, -34],
-            shadowUrl: '/leaflet/images/marker-shadow.png',
+            shadowUrl: '/pictures/placeholder.png',
             shadowSize: [0, 0],
             shadowAnchor: [0, 0]
         })
@@ -59,7 +64,7 @@
             iconSize: [41, 41],
             iconAnchor: [0, 41],
             popupAnchor: [34, -34],
-            shadowUrl: '/leaflet/images/marker-shadow.png',
+            shadowUrl: '/pictures/placeholder.png',
             shadowSize: [0, 0],
             shadowAnchor: [0, 0]
         })
