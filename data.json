@@ -6,7 +6,8 @@
             "title": "Vasútállomás",
             "address": "Siófok, Kálmán Imre stny., 8600",
             "image": "/pictures/46.9077157_18.0545054.webp"
-        }
+        },
+        "type": "complete"
     },
     {
         "z": 47.4095847,
@@ -15,7 +16,8 @@
             "title": "Ismeretlen",
             "address": "Budapest, Merkúr u. 13, 1214",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.422053,
@@ -24,7 +26,8 @@
             "title": "Csepel vasútállomás",
             "address": "Budapest, XXI. kerület",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.3416637,
@@ -33,7 +36,8 @@
             "title": "Miklós Pláza megálló",
             "address": "Szigetszentmiklós, 51101 14-10, 2310",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.3448023,
@@ -42,7 +46,8 @@
             "title": "Ismeretlen",
             "address": "Szigetszentmiklós, Tököli út 17-19, 2310",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.3583066,
@@ -51,7 +56,8 @@
             "title": "Ismeretlen",
             "address": "Szigetszentmiklós, 2310",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.5182284,
@@ -60,7 +66,8 @@
             "title": "Erzsébet kilátó",
             "address": "Budapest, János-hegy, Erzsébet kilátó út, 1121",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.5110861,
@@ -69,7 +76,8 @@
             "title": "Zugliget?",
             "address": "Budapest, Szilassy út 6b, 1121",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.4524268,
@@ -78,7 +86,8 @@
             "title": "Ismeretlen",
             "address": "Budapest, Igló u. 2, 1193",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.4966835,
@@ -87,7 +96,8 @@
             "title": "Blaha Lújza tér",
             "address": "Budapest, Blaha Lújza tér, 1085",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     },
     {
         "z": 47.5002164,
@@ -96,6 +106,7 @@
             "title": "Keleti pályaudvar?",
             "address": "Budapest, Baross téri aluljáró, 1087",
             "image": "/pictures/placeholder.png"
-        }
+        },
+        "type": "partial"
     }
 ]
