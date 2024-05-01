@@ -1,0 +1,29 @@
+/* Margins */
+.leaflet-left {
+    margin-left: 16px !important;
+}
+.leaflet-top {
+    margin-top: 16px !important;
+}
+.leaflet-right {
+    margin-right: 16px !important;
+}
+.leaflet-bottom {
+    margin-bottom: 16px !important;
+}
+.leaflet-control {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/* Default button size */
+.leaflet-touch .leaflet-bar a {
+    width: 32px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+}
+/* Zoom + Gps buttons */
+.leaflet-control-locate {
+    margin-top: 8px !important;
+}
