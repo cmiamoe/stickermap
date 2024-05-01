@@ -46,3 +46,9 @@ a.leaflet-bar-part.leaflet-bar-part-single {
     width: 100% !important;
     height: 100% !important;
 }
+a.leaflet-control-layers-toggle {
+    background-image: url(/icons/layers.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+background-size: 20px 20px !important;
+}
