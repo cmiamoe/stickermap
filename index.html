@@ -35,7 +35,11 @@
             position: relative;
         }
         .image-container img {
-            display: block
+            display: block;
+        }
+        img.pending {
+            filter: blur(10px) opacity(0.5);
+            transition: filter 1s;
         }
     </style>
 </head>
@@ -120,7 +124,7 @@
                                     <div class="spinner-blade"></div>
                                     <div class="spinner-blade"></div>
                                 </div>
-                                <img src="${item.popup.image}" width="100%" onload="document.getElementById('${item.popup.image}').style.display ='none'">
+                                <img class="pending" src="${item.popup.image}" width="100%" onload="document.getElementById('${item.popup.image}').style.display ='none';this.classList.remove('pending');">
                             </div>
                         `);
                     MarkerGroup.addLayer(marker);
