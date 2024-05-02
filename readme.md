@@ -13,3 +13,7 @@ Megcsinálni a matrica switchert
 
 ![image](https://github.com/BalazsManus/stickermap/assets/82440273/48a6f101-db9c-4dee-bc34-a26fe1fddf47)
 
+Attributionba Copy Qwit, design by, develop by, stb<br>
+Példa:
+
+![image](https://github.com/BalazsManus/stickermap/assets/82440273/4400dd5b-cda9-412f-bd3b-cd8e8d23008e)
