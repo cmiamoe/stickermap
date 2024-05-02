@@ -83,6 +83,8 @@ section.leaflet-control-layers-list {
     box-shadow: 0 1px 2.1px 0 #00000075 !important;
 }
 .leaflet-popup-content h3{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
     color: #050B15;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -91,12 +93,16 @@ section.leaflet-control-layers-list {
     margin: 0 !important;
 }
 .communityfound {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
     color: #3F444F !important;
     font-family: 'Figtree', sans-serif;
     font-weight: 500;
     size: 14px;
 }
 .popupdesc {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
     color: #050B15 !important;
     font-family: 'Figtree', sans-serif !important;
     font-weight: 500 !important;
@@ -105,9 +111,12 @@ section.leaflet-control-layers-list {
     margin-bottom: 8px !important;
 }
 .popupimg {
+    margin-top: 8px !important;
     border-radius: 16px !important;
 }
 .missinginfo {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
     color: #487DE6 !important;
     font-family: 'Figtree', sans-serif;
     font-weight: 500;
