@@ -26,12 +26,40 @@
 
 <body>
     <div id="map" style="height: 10px;"></div>
+    <div id="attributionelement" class="attrib">
+        <div id="attributton" class="attribbutton" aria-haspopup="true">
+            <section id="attrilist" class="attribution-list" style="display: none;">
+                <h1 class="attribution-header">reFilc Matricatérkép</h1>
+                <div id="attriblist"></div>
+            </section>
+        </div>
+    </div>
     <script src="/js/variables.js"></script>
     <script src="/js/preinit.js"></script>
     <script src="/js/mapinit.js"></script>
     <script src="/js/datafetch.js"></script>
     <script src="/js/dynamicheight.js"></script>
     <script src="/js/extrainit.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var attributionLink = document.getElementById('attributton');
+    var attributionList = document.getElementById('attrilist');
+
+    attributionLink.addEventListener('click', function() {
+        console.log('click')
+        attributionList.style.display =  'block';
+        event.preventDefault();
+    });
+
+    attributionLink.addEventListener('mouseover', function() {
+        attributionList.style.display = 'block';
+    });
+
+    attributionLink.addEventListener('mouseout', function() {
+        attributionList.style.display = 'none';
+    });
+});
+    </script>
 </body>
 
 </html>

@@ -1,11 +1,10 @@
 var map = L.map('map', { attributionControl: false, minZoom: 6, zoomControl: false }).setView([47.184, 19.509], 8);
 
 L.control.zoom({ position: 'topleft', zoomInText: '<div class="navy-button"><img src="/icons/plus.svg"></div>', zoomOutText: '<div class="navy-button"><img src="/icons/minus.svg"></div>' }).addTo(map);
-L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution(`
-<div id="attributionelement"></div>
-`).addTo(map);
+L.control.attribution({ position: 'bottomright', prefix: false }).addTo(map);
 
 Standard.addTo(map);
+document.getElementById('attriblist').innerHTML = StandardAtt;
 map.on('overlayadd', function(eventLayer) {
     if (eventLayer.name === 'Matricák') {
         document.querySelector('.matrica').classList.add('matricaon');
@@ -27,14 +26,18 @@ L.control.layers(baseLayers, overlayLayers, { position: 'bottomleft' }).addTo(ma
 
 map.on('baselayerchange', function(eventLayer) {
     window.fireStyleChangeEvent();
+    try {
     if (eventLayer.name === 'Mapnik (Alapértelmezett)') {
-        document.getElementById('attributionelement').innerHTML = StandardAtt;
+        document.getElementById('attriblist').innerHTML = StandardAtt;
     } else if (eventLayer.name === 'OSM Francia Stílus') {
-        document.getElementById('attributionelement').innerHTML = FranceStyleAtt;
+        document.getElementById('attriblist').innerHTML = FranceStyleAtt;
     } else if (eventLayer.name === 'Humanitárius') {
-        document.getElementById('attributionelement').innerHTML = HumanitarianAtt;
+        document.getElementById('attriblist').innerHTML = HumanitarianAtt;
     }
-})
+} catch {
+    console.info(':3 i forgor to add div');
+}
+});
 
 try {
     L.control.locate({ setView: false }).addTo(map);
