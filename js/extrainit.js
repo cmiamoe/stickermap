@@ -19,10 +19,5 @@ overlays.forEach(function (element) {
   element.classList.add('overlaystyle');
 });
 
-window.onload = function () {
-    var nohide = document.querySelector('.leaflet-control-layers.leaflet-control');
-    nohide.classList.add('leaflet-control-layers-expanded');
-}
-
 var sep = document.querySelector('.leaflet-control-layers-separator');
 sep.remove();
