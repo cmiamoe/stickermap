@@ -6,6 +6,20 @@ L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution
 `).addTo(map);
 
 Standard.addTo(map);
+map.on('overlayadd', function(eventLayer) {
+    if (eventLayer.name === 'Matricák') {
+        document.querySelector('.matrica').classList.add('matricaon');
+    } else if (eventLayer.name === 'Dokumentálatlan Matricák') {
+        document.querySelector('.nomatr').classList.add('nomatron');
+    }
+});
+map.on('overlayremove', function(eventLayer) {
+    if (eventLayer.name === 'Matricák') {
+        document.querySelector('.matrica').classList.remove('matricaon');
+    } else if (eventLayer.name === 'Dokumentálatlan Matricák') {
+        document.querySelector('.nomatr').classList.remove('nomatron');
+    }
+});
 stickerMarkers.addTo(map);
 partialStickerMarkers.addTo(map);
 

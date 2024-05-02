@@ -4,11 +4,25 @@ element.insertAdjacentHTML('afterbegin', '<h1 class="settingsheader">Beállítá
 var baseLayers = document.querySelectorAll('.leaflet-control-layers-base label');
 var overlays = document.querySelectorAll('.leaflet-control-layers-overlays label');
 
+var overlay1 = document.querySelector('.leaflet-control-layers-overlays label:nth-child(1)');
+overlay1.classList.add('matrica');
+document.querySelector('.matrica').classList.add('matricaon');
+var overlay2 = document.querySelector('.leaflet-control-layers-overlays label:nth-child(2)');
+overlay2.classList.add('nomatr');
+document.querySelector('.nomatr').classList.add('nomatron');
+
 baseLayers.forEach(function (element) {
   element.classList.add('baselayerstyle');
+});
+
+overlays.forEach(function (element) {
+  element.classList.add('overlaystyle');
 });
 
 window.onload = function () {
     var nohide = document.querySelector('.leaflet-control-layers.leaflet-control');
     nohide.classList.add('leaflet-control-layers-expanded');
 }
+
+var sep = document.querySelector('.leaflet-control-layers-separator');
+sep.remove();

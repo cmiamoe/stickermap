@@ -7,8 +7,8 @@
             "address": "Siófok, Kálmán Imre stny., 8600",
             "image": "/data/images/46.9077157_18.0545054.webp"
         },
-        "type": "communityfound",
-        "finder": "chromium" 
+        "type": "complete",
+        "finder": "" 
     },
     {
         "z": 47.4095847,
