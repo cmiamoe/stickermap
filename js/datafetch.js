@@ -10,8 +10,10 @@ fetch('/data/data.json')
             var finderinfo = item.type === "communityfound" ? `<p class="communityfound">Kiegészítette, ${item.finder}.</p>` : "";
             var marker = L.marker([item.z, item.x], { icon: markerIcon })
                 .bindPopup(`
-                <h3>${item.popup.title}</h3>
-                <p class="popupdesc">${item.popup.address}</p>
+                <div>
+                    <h3>${item.popup.title}</h3>
+                    <p class="popupdesc">${item.popup.address}</p>
+                </div>
                 <div class="image-container">
                     <div id="${item.popup.image}" class="spinner center">
                         <div class="spinner-blade"></div>

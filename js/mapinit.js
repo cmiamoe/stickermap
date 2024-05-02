@@ -12,6 +12,7 @@ partialStickerMarkers.addTo(map);
 L.control.layers(baseLayers, overlayLayers, { position: 'bottomleft' }).addTo(map);
 
 map.on('baselayerchange', function(eventLayer) {
+    window.fireStyleChangeEvent();
     if (eventLayer.name === 'Mapnik (Alapértelmezett)') {
         document.getElementById('attributionelement').innerHTML = StandardAtt;
     } else if (eventLayer.name === 'OSM Francia Stílus') {
@@ -26,3 +27,5 @@ try {
 } catch {
     console.warn('Location module is not available.');
 }
+
+window.fireStyleChangeEvent();
