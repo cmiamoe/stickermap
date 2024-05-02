@@ -29,7 +29,7 @@ fetch('/data/data.json')
                         <div class="spinner-blade"></div>
                         <div class="spinner-blade"></div>
                     </div>
-                    <img class="pending popupimg" src="${item.popup.image}" width="100%" onload="document.getElementById('${item.popup.image}').style.display ='none';this.classList.remove('pending');">
+                    <img class="pending popupimg" src="${item.popup.image}" width="100%" onload="document.getElementById('${item.popup.image}').remove();this.classList.remove('pending');">
                 </div>
                 ${extrainfo}
                 ${finderinfo}

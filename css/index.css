@@ -32,8 +32,7 @@ body {
 }
 
 img.pending {
-    filter: blur(10x) opacity(0.5);
-    transition: filter 1s;
+    opacity: 0.5;
 }
 
 .leaflet-container {
@@ -201,4 +200,10 @@ section.attribution-list {
 }
 a.attribution-list {
     color: #487DE6 !important;
+}
+bgloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
