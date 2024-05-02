@@ -2,7 +2,7 @@ var map = L.map('map', { attributionControl: false, minZoom: 6, zoomControl: fal
 
 L.control.zoom({ position: 'topleft', zoomInText: '<div class="navy-button"><img src="/icons/plus.svg"></div>', zoomOutText: '<div class="navy-button"><img src="/icons/minus.svg"></div>' }).addTo(map);
 L.control.attribution({ position: 'bottomright', prefix: false }).addAttribution(`
-<a href="https://refilc.hu">reFilc</a> Matricatérkép
+<div id="attributionelement"></div>
 `).addTo(map);
 
 Standard.addTo(map);

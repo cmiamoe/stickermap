@@ -1,8 +1,9 @@
 fetch('/data/data.json')
     .then(response => response.json())
     .then(data => {
+        var entries = 0;
         data.forEach(item => {
-            console.log("Found entry: " + item.popup.address)
+            entries++;
             var markerIcon = (item.type === "complete" || item.type === "communityfound") ? stickerIcon : partialIcon;
             var MarkerGroup = item.type === "complete" ? stickerMarkers : partialStickerMarkers;
             var extrainfo = (item.type === "complete" || item.type === "communityfound") ? "" : '<a class="missinginfo" href="https://forms.gle/gCpWT2j4qARYVCz58">Az információ hiányos, ha megtalálod, jelezd!</a>';
@@ -33,4 +34,5 @@ fetch('/data/data.json')
             `);
             MarkerGroup.addLayer(marker);
         });
+        console.log(`Found ${entries} entries.`);
     });
