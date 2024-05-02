@@ -15,20 +15,20 @@ var baseLayers = {
 
 var stickerMarkers = L.layerGroup();
 const stickerIcon = L.icon({
-    iconUrl: '/icons/filc.png',
-    iconSize: [41, 41],
-    iconAnchor: [0, 41],
-    popupAnchor: [34, -34],
+    iconUrl: '/icons/sticker.svg',
+    iconSize: [40, 40],
+    iconAnchor: [0, 40],
+    popupAnchor: [20, -20],
     shadowUrl: '/icons/placeholder.png',
     shadowSize: [0, 0],
     shadowAnchor: [0, 0]
 })
 var partialStickerMarkers = L.layerGroup();
 const partialIcon = L.icon({
-    iconUrl: '/icons/filcMono.png',
-    iconSize: [41, 41],
-    iconAnchor: [0, 41],
-    popupAnchor: [34, -34],
+    iconUrl: '/icons/stickermono.svg',
+    iconSize: [40, 40],
+    iconAnchor: [0, 40],
+    popupAnchor: [20, -20],
     shadowUrl: '/icons/placeholder.png',
     shadowSize: [0, 0],
     shadowAnchor: [0, 0]
