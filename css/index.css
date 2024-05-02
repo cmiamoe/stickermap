@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --button-color: #FBFCFF;
+    --border-color: #CEDBF5;
+    --margin: 16px;
+    --button-size: 32px;
+    --button-radius: 8px;
+}
+
 body {
-    background-color: #FBFCFF;
+    background-color: var(--button-color);
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif !important;
@@ -28,16 +36,16 @@ img.pending {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: var(--button-size);
+    height: var(--button-size);
 }
 
 a.leaflet-bar-part.leaflet-bar-part-single {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px !important;
-    height: 32px !important;
+    width: var(--button-size) !important;
+    height: var(--button-size) !important;
 }
 .leaflet-control-locate-location-arrow {
     background-image: url(/icons/locate.svg) !important;
