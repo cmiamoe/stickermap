@@ -10,6 +10,17 @@ stickerMarkers.addTo(map);
 partialStickerMarkers.addTo(map);
 
 L.control.layers(baseLayers, overlayLayers, { position: 'bottomleft' }).addTo(map);
+
+map.on('baselayerchange', function(eventLayer) {
+    if (eventLayer.name === 'Mapnik (Alapértelmezett)') {
+        document.getElementById('attributionelement').innerHTML = StandardAtt;
+    } else if (eventLayer.name === 'OSM Francia Stílus') {
+        document.getElementById('attributionelement').innerHTML = FranceStyleAtt;
+    } else if (eventLayer.name === 'Humanitárius') {
+        document.getElementById('attributionelement').innerHTML = HumanitarianAtt;
+    }
+})
+
 try {
     L.control.locate({ setView: false }).addTo(map);
 } catch {
