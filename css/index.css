@@ -193,9 +193,12 @@ section.attribution-list {
     margin-bottom: 4px !important;
     margin-top: 0 !important;
 }
-p.attribution-list {
+.attribution-list {
     color: #3F444F;
     font-family: 'Figtree', sans-serif;
     font-weight: 500;
     size: 14px;
+}
+a.attribution-list {
+    color: #487DE6 !important;
 }
