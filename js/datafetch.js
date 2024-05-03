@@ -36,6 +36,8 @@ fetch('/data/data.json')
             `);
             MarkerGroup.addLayer(marker);
         });
-        entries--;
+        console.info(`Found ${entries} entries.`)
+        console.info('Hint for the last one: go up')
+        console.log("Ha nagyon szeretsz keresgélni, akkor ajánlom a refilc githubját ahol tudnál hibákat javítani. Jobb elfoglaltság meglásd: https://github.com/refilc/naplo")
         document.getElementById('stickernumber').innerText = entries;
     });
