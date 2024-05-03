@@ -130,5 +130,27 @@
         },
         "type": "complete",
         "finder": ""
+    },
+    {
+        "z": 46.0743365,
+        "x": 18.2355162,
+        "popup": {
+            "title": "Lámpaoszlop",
+            "address": "Pécs, Felsőmalom u. 16, 7621",
+            "image": "/data/images/46.0743365_18.2355162.webp"
+        },
+        "type": "complete",
+        "finder": ""
+    },
+    {
+        "z": 46.074407,
+        "x": 18.236078,
+        "popup": {
+            "title": "Lámpaoszlop",
+            "address": "Pécs, Rákóczi út 78, 7622",
+            "image": "/data/images/46.074407_18.236078.webp"
+        },
+        "type": "complete",
+        "finder": ""
     }
 ]
