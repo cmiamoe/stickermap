@@ -38,6 +38,6 @@ fetch('/data/data.json')
         });
         console.info(`Found ${entries} entries.`)
         console.info('Hint for the last one: go up')
-        console.log('%c Ha nagyon szeretsz keresgélni, akkor ajánlom a refilc githubját ahol tudnál hibákat javítani. Jobb elfoglaltság meglásd: https://github.com/refilc/naplo', 'color: white; font-size: 50px; font-family: sans-serif;')
+        console.log('%cHa nagyon szeretsz keresgélni, akkor ajánlom a refilc githubját ahol tudnál hibákat javítani. Jobb elfoglaltság meglásd: https://github.com/refilc/naplo', 'color: white; font-size: 50px; font-family: sans-serif;')
         document.getElementById('stickernumber').innerText = entries;
     });
