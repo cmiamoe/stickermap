@@ -31,8 +31,10 @@ map.on('baselayerchange', function(eventLayer) {
         document.getElementById('attriblist').innerHTML = StandardAtt;
     } else if (eventLayer.name === 'OSM Francia Stílus') {
         document.getElementById('attriblist').innerHTML = FranceStyleAtt;
-    } else if (eventLayer.name === 'Humanitárius') {
-        document.getElementById('attriblist').innerHTML = HumanitarianAtt;
+    } else if (eventLayer.name === 'Alidade Sötét') {
+        document.getElementById('attriblist').innerHTML = AlidadeDarkAtt;
+    } else if (eventLayer.name === 'Alidade Világos') {
+        document.getElementById('attriblist').innerHTML = AlidadeLightAtt;
     }
 } catch {
     console.info(':3 i forgor to add div');
