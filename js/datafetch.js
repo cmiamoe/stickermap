@@ -36,5 +36,6 @@ fetch('/data/data.json')
             `);
             MarkerGroup.addLayer(marker);
         });
-        console.log(`Found ${entries} entries.`);
+        entries--;
+        document.getElementById('stickernumber').innerText = entries;
     });
