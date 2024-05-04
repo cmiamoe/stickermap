@@ -51,7 +51,7 @@ fetch('/data/data.json')
                 <div class="missingdata">
                     <img src="/icons/sad.svg">
                     <p class="missinginfo">Ez a matrica nincs dokumentálva,<br>
-                    ha megtaláltad, <a class="missinginfo" href="https://forms.gle/gCpWT2j4qARYVCz58">jelezd</a>!</p>
+                    ha megtaláltad, <a class="missinginfo" href="#" onclick="editwarning.style.display = 'block';overlay.style.display = 'block';event.stopPropagation();">jelezd</a>!</p>
                 </div>
             </div>
             `;
