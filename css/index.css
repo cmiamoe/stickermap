@@ -269,3 +269,9 @@ a.attribution-list {
     bottom: 10px;
     left: 10px;
 }
+a.uri {
+    color: #487DE6 !important;
+}
+a.uri:visited {
+    color: #487DE6 !important;
+}
