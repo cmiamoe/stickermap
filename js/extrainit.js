@@ -11,6 +11,13 @@ var overlay2 = document.querySelector('.leaflet-control-layers-overlays label:nt
 overlay2.classList.add('nomatr');
 document.querySelector('.nomatr').classList.add('nomatron');
 
+function toggleSticker(stickerClosed, stickerExpanded) {
+  var sticclos = document.getElementById(stickerClosed);
+  var sticcexp = document.getElementById(stickerExpanded);
+  sticclos.style.display = (sticclos.style.display == 'none') ? 'block' : 'none';
+  sticcexp.style.display = (sticcexp.style.display == 'none') ? 'block' : 'none';
+}
+
 baseLayers.forEach(function (element) {
   element.classList.add('baselayerstyle');
 });
@@ -21,3 +28,5 @@ overlays.forEach(function (element) {
 
 var sep = document.querySelector('.leaflet-control-layers-separator');
 sep.remove();
+
+window.toggleSticker = toggleSticker;
