@@ -29,7 +29,7 @@ map.on('baselayerchange', function(eventLayer) {
     try {
     if (eventLayer.name === 'Mapnik (Alapértelmezett)') {
         document.getElementById('attriblist').innerHTML = StandardAtt;
-    } else if (eventLayer.name === 'OSM Francia Stílus') {
+    } else if (eventLayer.name === 'Francia OSM (Részletes)') {
         document.getElementById('attriblist').innerHTML = FranceStyleAtt;
     } else if (eventLayer.name === 'Humanitárius') {
         document.getElementById('attriblist').innerHTML = HumanitarianAtt;

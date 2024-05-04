@@ -12,7 +12,7 @@ const HumanitarianAtt = `&copy; <a href="https://www.openstreetmap.org/copyright
 
 var baseLayers = {
     "Mapnik (Alapértelmezett)": Standard,
-    "OSM Francia Stílus": FranceStyle,
+    "Francia OSM (Részletes)": FranceStyle,
     "Humanitárius": Humanitarian
 };
 
