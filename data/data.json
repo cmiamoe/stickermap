@@ -8,7 +8,8 @@
             "image": "/data/images/46.9077157_18.0545054.webp"
         },
         "type": "complete",
-        "finder": "" 
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.4095847,
@@ -19,7 +20,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.422053,
@@ -30,7 +32,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.3416637,
@@ -41,7 +44,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.3448023,
@@ -52,7 +56,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.3583066,
@@ -63,7 +68,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.5182284,
@@ -74,7 +80,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.5110861,
@@ -85,7 +92,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.4524268,
@@ -96,7 +104,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.4966835,
@@ -107,7 +116,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 47.5002164,
@@ -118,7 +128,8 @@
             "image": "/icons/placeholder.png"
         },
         "type": "partial",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 80.1960009,
@@ -129,7 +140,8 @@
             "image": "/data/images/80.1960009_32.5608695.webp"
         },
         "type": "complete",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 46.0743365,
@@ -140,7 +152,8 @@
             "image": "/data/images/46.0743365_18.2355162.webp"
         },
         "type": "complete",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     },
     {
         "z": 46.074407,
@@ -151,6 +164,7 @@
             "image": "/data/images/46.074407_18.236078.webp"
         },
         "type": "complete",
-        "finder": ""
+        "finder": "",
+        "style": "qr"
     }
 ]
