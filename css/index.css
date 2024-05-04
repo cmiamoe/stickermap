@@ -243,3 +243,14 @@ a.attribution-list {
     margin: 0;
     padding: 0;
 }
+.missingdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #DAE4F7;
+    border-radius: 16px;
+    padding: 16px 0px;
+    margin-top: 20px;
+}

@@ -111,16 +111,19 @@ section.leaflet-control-layers-list {
     margin-bottom: 8px !important;
 }
 .popupimg {
-    margin-top: 8px !important;
+    margin-top: 20px !important;
     border-radius: 16px !important;
 }
 .missinginfo {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-    color: #487DE6 !important;
+    margin: 0 !important;
+    color: #3F444F;
+    text-align: center;
     font-family: 'Figtree', sans-serif;
     font-weight: 500;
     size: 14px;
+}
+a.missinginfo {
+    color: #487DE6 !important;
 }
 .leaflet-popup-close-button {
     width: 20px !important;
