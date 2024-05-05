@@ -173,7 +173,10 @@
         "popup": {
             "title": "Metrókijárat",
             "address": "Budapest, Örs vezér tere, 1148",
-            "image": ""
-        }
+            "image": "/data/images/47.052968_19.136036.webp"
+        },
+        "type": "communityfound",
+        "finder": "Zan1456",
+        "style": "qr"
     }
 ]
