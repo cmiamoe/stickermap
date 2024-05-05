@@ -10,4 +10,4 @@ Kő hozzá:
 
 # TODO:
 * Kimától elkérni a képeket
-* Qr kódos matrica kép
+* meta tags
