@@ -9,7 +9,7 @@ fetch('/data/data.json')
             const finderinfo = item.type === "communityfound" ? `<p class="communityfound">Készítette, ${item.finder}.</p>` : "";
             let StickerStyle
             if (item.style === "qr") {
-
+                StickerStyle = '/data/styles/qr.webp'
             } else if (item.style === "nothanks") {
                 StickerStyle = '/data/styles/nothanks.webp'
             } else if (item.style === "nothanks2") {
