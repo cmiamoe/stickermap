@@ -239,10 +239,11 @@ a.attribution-list {
 
 .editwarning {
     z-index: 9970;
-    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: fixed;
+    width: 375px;
 }
 
 .editwarningpopup {
