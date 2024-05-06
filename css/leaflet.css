@@ -111,7 +111,9 @@ section.leaflet-control-layers-list {
     margin-bottom: 8px !important;
 }
 .popupimg {
+    max-height: 300px;
     border-radius: 16px !important;
+    object-fit: cover;
 }
 .missinginfo {
     margin: 0 !important;
