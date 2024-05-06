@@ -13,4 +13,27 @@ function fireStyleChangeEvent() {
         parentSpan.classList.add('selectedbaselayerstyle');
     }
 }
+
+// Fuck this shit, all css has hardcoded variables
+
+/*function loadCSS(filename) {
+    var link = document.createElement("link");
+    link.href = filename;
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    document.getElementsByTagName("head")[0].appendChild(link);
+}
+
+function getUserColorScheme() {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        loadCSS('/css/var/dark.css');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        loadCSS('/css/var/light.css');
+    } else {
+        loadCSS('/css/var/light.css');
+    }
+}
+
+window.loadCSS = loadCSS;
+window.getUserColorScheme = getUserColorScheme;*/
 window.fireStyleChangeEvent = fireStyleChangeEvent;
