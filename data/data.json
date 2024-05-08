@@ -178,5 +178,17 @@
         "type": "communityfound",
         "finder": "Zan1456",
         "style": "qr"
+    },
+    {
+        "z": 46.073879,
+        "x": 18.237893,
+        "popup": {
+            "title": "Pécsi Tudományegyetem",
+            "address": "Pécs, Egyetem u., 7622",
+            "image": "/data/images/46.073879_18.237893.webp"
+        },
+        "type": "complete",
+        "finder": "",
+        "style": "qr"
     }
 ]
