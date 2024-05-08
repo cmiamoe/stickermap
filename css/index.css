@@ -383,3 +383,9 @@ a.uri {
 a.uri:visited {
     color: #487DE6 !important;
 }
+
+.relativeclosebutton {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}

@@ -16,7 +16,11 @@ var baseLayers = {
     "Humanitárius": Humanitarian
 };
 
-var stickerMarkers = L.markerClusterGroup();
+var stickerMarkers = L.markerClusterGroup({
+    iconCreateFunction: function(cluster) {
+		return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
+	}
+});
 const stickerIcon = L.icon({
     iconUrl: '/icons/sticker.svg',
     iconSize: [40, 40],
@@ -27,7 +31,11 @@ const stickerIcon = L.icon({
     shadowAnchor: [0, 0]
 })
 
-var partialStickerMarkers = L.markerClusterGroup();
+var partialStickerMarkers = L.markerClusterGroup({
+    iconCreateFunction: function(cluster) {
+		return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
+	}
+});
 const partialIcon = L.icon({
     iconUrl: '/icons/stickermono.svg',
     iconSize: [40, 40],
