@@ -16,7 +16,7 @@ var baseLayers = {
     "Humanitárius": Humanitarian
 };
 
-var stickerMarkers = L.layerGroup();
+var stickerMarkers = L.markerClusterGroup();
 const stickerIcon = L.icon({
     iconUrl: '/icons/sticker.svg',
     iconSize: [40, 40],
@@ -27,7 +27,7 @@ const stickerIcon = L.icon({
     shadowAnchor: [0, 0]
 })
 
-var partialStickerMarkers = L.layerGroup();
+var partialStickerMarkers = L.markerClusterGroup();
 const partialIcon = L.icon({
     iconUrl: '/icons/stickermono.svg',
     iconSize: [40, 40],
