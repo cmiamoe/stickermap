@@ -165,3 +165,22 @@ section.leaflet-control-layers-list {
     flex-direction: column !important;
     gap: 8px !important;
 }
+
+.leaflet-div-icon {
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    background-color: var(--button-color);
+    box-shadow: 0px 3px 4.9px 0px rgba(0, 0, 0, 0.10), 0px 1px 2.1px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-color);
+}
+.leaflet-div-icon-text {
+    color: #050B15;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 500;
+    size: 14px;
+}

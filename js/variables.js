@@ -18,7 +18,7 @@ var baseLayers = {
 
 var stickerMarkers = L.markerClusterGroup({
     iconCreateFunction: function(cluster) {
-		return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
+		return L.divIcon({ html: '<b class="leaflet-div-icon-text">' + cluster.getChildCount() + '</b>' });
 	}
 });
 const stickerIcon = L.icon({
@@ -33,7 +33,7 @@ const stickerIcon = L.icon({
 
 var partialStickerMarkers = L.markerClusterGroup({
     iconCreateFunction: function(cluster) {
-		return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
+		return L.divIcon({ html: '<b class="leaflet-div-icon-text">' + cluster.getChildCount() + '</b>' });
 	}
 });
 const partialIcon = L.icon({
