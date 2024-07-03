@@ -226,5 +226,17 @@
         "type": "complete",
         "finder": "",
         "style": "qr"
+    },
+    {
+        "z": 47.347422,
+        "x": 19.020141,
+        "popup": {
+            "title": "Park",
+            "address": "Szigetszentmiklós, Haszontalan dűlő u., 2310",
+            "image": "/data/images/47.347422_19.020141.webp"
+        },
+        "type": "complete",
+        "finder": "",
+        "style": "qr"
     }
 ]
