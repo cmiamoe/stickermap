@@ -372,7 +372,7 @@ a.attribution-list {
     position: relative;
 }
 .small-stickerimg {
-    border-radius: 8px;
+    border-radius: 4px;
     position: absolute;
     bottom: 10px;
     left: 10px;
