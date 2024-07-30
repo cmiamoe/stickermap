@@ -250,5 +250,17 @@
         "type": "complete",
         "finder": "",
         "style": "qr"
+    },
+    {
+        "z": 46.758647,
+        "x": 17.253938,
+        "popup": {
+            "title": "Keszthely felirat",
+            "address": "Keszthely, Mikus Gyula sétány, 8360",
+            "image": "/data/images/46.758647_17.253938.webp"
+        },
+        "type": "complete",
+        "finder": "",
+        "style": "qr"
     }
 ]
