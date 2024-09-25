@@ -271,7 +271,7 @@
             "address": "Esztergom, Szent István tér, 2500",
             "image": "/data/images/47.798878_18.738420.webp"
         },
-        "type": "complete",
+        "type": "communityfound",
         "finder": "https://youtu.be/4cnndzMQSRU",
         "style": "qr"
     }
