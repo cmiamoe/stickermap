@@ -61,7 +61,6 @@ fetch('/data/data.json')
             MarkerGroup.addLayer(marker);
         });
         console.info(`Found ${entries} entries.`)
-        console.info('Hint for the secret one: go up (code not avaiable anymore)')
         console.log('%cDe tE MiT KeReSgÉlSz??? Menj inkább reFilc contributornak, jobb elfoglaltság meglásd. https://github.com/refilc/naplo', 'color: white; font-size: 50px; font-family: sans-serif;')
         document.getElementById('stickernumber').innerText = entries;
     });
