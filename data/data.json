@@ -274,5 +274,17 @@
         "type": "communityfound",
         "finder": "<a href=\"https://youtu.be/4cnndzMQSRU\">Klikk hír</a>",
         "style": "qr"
+    },
+    {
+        "z": 46.074034,
+        "x": 18.230423,
+        "popup": {
+            "title": "Pécsi kormányablak",
+            "address": "Pécs, Kossuth tér 3, 7621",
+            "image": "/data/images/46.074034_18.230423.webp"
+        },
+        "type": "communityfound",
+        "finder": "Saul von Gutman",
+        "style": "qr"
     }
 ]
