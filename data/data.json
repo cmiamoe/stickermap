@@ -286,5 +286,17 @@
         "type": "communityfound",
         "finder": "Saul von Gutman",
         "style": "qr"
+    },
+    {
+        "z": 47.46865,
+        "x": 19.07406,
+        "popup": {
+            "title": "Közvágóhíd Villamosmegálló",
+            "address": "Budapest, Közvágóhíd H, 1095",
+            "image": "/data/images/47.46865_19.07406.webp"
+        },
+        "type": "communityfound",
+        "finder": "Kapaló Krisztián",
+        "style": "qr"
     }
 ]
