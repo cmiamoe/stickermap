@@ -1,4 +1,4 @@
-// purely for testing, not included in prod
+// this shouldn't be loaded
 map.on('moveend', function() {
     var bounds = map.getBounds();
 

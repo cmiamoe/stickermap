@@ -34,9 +34,9 @@ map.on('baselayerchange', function(eventLayer) {
     } else if (eventLayer.name === 'Humanitárius') {
         document.getElementById('attriblist').innerHTML = HumanitarianAtt;
     }
-} catch {
-    console.info(':3 i forgor to add div');
-}
+    } catch {
+    console.error("Couldn't change attriblist")
+    }
 });
 
 try {

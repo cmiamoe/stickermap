@@ -60,7 +60,6 @@ fetch('/data/data.json')
                 .bindPopup(popupData);
             MarkerGroup.addLayer(marker);
         });
-        console.info(`Found ${entries} entries.`)
         console.log('%cDe tE MiT KeReSgÉlSz??? Menj inkább reFilc contributornak, jobb elfoglaltság meglásd. https://github.com/refilc/naplo', 'color: white; font-size: 50px; font-family: sans-serif;')
         document.getElementById('stickernumber').innerText = entries;
     });
