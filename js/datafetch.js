@@ -5,7 +5,7 @@ fetch('/data/data.json')
         data.forEach(item => {
             entries++;
             const markerIcon = (item.type === "complete" || item.type === "communityfound") ? stickerIcon : partialIcon;
-            const MarkerGroup = item.type === "complete" ? stickerMarkers : partialStickerMarkers;
+            const MarkerGroup = (item.type === "complete" || item.type === "communityfound") ? stickerMarkers : partialStickerMarkers;
             const finderinfo = item.type === "communityfound" ? `<p class="communityfound">Készítette, ${item.finder}.</p>` : "";
             let StickerStyle
             if (item.style === "qr") {
