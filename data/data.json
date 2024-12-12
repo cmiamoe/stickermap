@@ -298,5 +298,17 @@
         "type": "communityfound",
         "finder": "Kapaló Krisztián",
         "style": "qr"
+    },
+    {
+        "z": 47.355274,
+        "x": 19.034859,
+        "popup": {
+            "title": "Kölcsey Ferenc utcai Buszmegálló",
+            "address": "Szigetszentmiklós, Petőfi Sándor utca 74., 2310",
+            "image": "/data/images/47.355274_19.034859.webp"
+        },
+        "type": "communityfound",
+        "finder": "Koch Hunor",
+        "style": "qr"
     }
 ]
