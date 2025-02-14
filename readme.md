@@ -1,1 +1,1 @@
-na szevasz te itt mit keresel?
+Ez az oldal túlélte a "Klímapokalipszist"! - 2025. 02. 12.
