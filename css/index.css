@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-    --button-color: #FBFCFF;
-    --border-color: #CEDBF5;
+    --button-color: #FEFFFD;
+    --border-color: #FEFFFD;
     --margin: 16px;
     --button-size: 32px;
     --button-radius: 7px;
@@ -76,19 +76,19 @@ a.leaflet-control-layers-toggle {
     line-height: normal !important;
     margin-bottom: 20px !important;
     margin-top: 0 !important;
+    color: #394C0A !important;
 }
 .baselayerstyle {
     cursor: pointer;
     padding-right: 12px !important;
     padding-left: 12px !important;
     border-radius: 12px !important;
-    border: 1px solid #CEDBF5;
     height: 40px;
     gap: 12px !important;
     display: flex !important;
     align-items: center;
     align-self: stretch;
-    color: #3F444F !important;
+    color: rgba(57, 76, 10, 0.80) !important;
     font-family: 'Figtree', sans-serif !important;
     font-size: 16px !important;
     font-style: normal !important;
@@ -101,7 +101,7 @@ a.leaflet-control-layers-toggle {
     background-position: 95% 50%;
     padding-right: 12px !important;
     padding-left: 12px !important;
-    background-color: #FBFCFF !important;
+    background-color: #FEFFFD !important;
     border-radius: 12px !important;
     border: none !important;
     height: 40px;
@@ -109,7 +109,7 @@ a.leaflet-control-layers-toggle {
     display: flex !important;
     align-items: center;
     align-self: stretch;
-    color: #050B15 !important;
+    color: #394C0A !important;
     font-family: 'Figtree', sans-serif !important;
     font-size: 16px !important;
     font-style: normal !important;
@@ -121,7 +121,7 @@ a.leaflet-control-layers-toggle {
     cursor: pointer;
     padding-right: 12px !important;
     padding-left: 44px !important;
-    background-color: #FBFCFF !important;
+    background-color: #FEFFFD !important;
     border-radius: 12px !important;
     border: none !important;
     height: 40px;
@@ -129,7 +129,7 @@ a.leaflet-control-layers-toggle {
     display: flex !important;
     align-items: center;
     align-self: stretch;
-    color: #050B15 !important;
+    color: #394C0A !important;
     font-family: 'Figtree', sans-serif !important;
     font-size: 16px !important;
     font-style: normal !important;
@@ -181,9 +181,8 @@ a.leaflet-control-layers-toggle {
     margin-bottom: 16px;
     width: 32px;
     height: 32px;
-    background-color: #FBFCFF;
+    background-color: #FEFFFD;
     border-radius: 7px;
-    border: 1px solid #CEDBF5;
 }
 section.attribution-list {
     background-color: #EDF3FF !important;
@@ -323,8 +322,7 @@ a.attribution-list {
     padding: 5px;
     flex-shrink: 0;
     border-radius: var(--button-radius);
-    background-color: #EDF3FF;
-    border: 1px solid #CEDBF5;
+    background-color: #FEFFFD;
     box-shadow: 0px 3px 4.9px 0px rgba(0, 0, 0, 0.10), 0px 1px 2.1px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -340,11 +338,11 @@ a.attribution-list {
     background-image: url(/icons/stickericon.svg);
     background-repeat: no-repeat;
     background-position: 20% 50%;
-    background-color: #EDF3FF;
+    background-color: #F3FBDE;
     box-shadow: 0px 3px 4.9px 0px rgba(0, 0, 0, 0.10), 0px 1px 2.1px 0px rgba(0, 0, 0, 0.25);
 }
 .stickercount p{
-    color: #050B15;
+    color: #394C0A;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
