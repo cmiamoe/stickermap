@@ -80,7 +80,7 @@
         </div>
         <a href="#">
             <div class="editmap" id="editmapbutton">
-                <img src="/icons/stylus.svg" width="20px">
+                <img src="/icons/stylus.svg" width="20px" alt>
             </div>
         </a>
     </div>
@@ -88,7 +88,7 @@
     <div class="editwarning" style="display: none;" id="editwarning">
         <div class="editwarningpopup">
             <a href="#" onclick="overlay.style.display='none';editwarning.style.display='none';">
-                <img class="relativeclosebutton" src="/icons/close.svg" width="20px" height="20px">
+                <img class="relativeclosebutton" src="/icons/close.svg" width="20px" height="20px" alt>
             </a>
             <div class="editwarnheader">
                 <h1>Nincs rajta,<br>
@@ -111,11 +111,11 @@
     <script src="/js/extrainit.js"></script>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
-    var editmap = document.getElementById('editmapbutton');
-    var editwarning = document.getElementById('editwarning');
-    var attributionLink = document.getElementById('attributton');
-    var attributionList = document.getElementById('attrilist');
-    var overlay = document.getElementById('overlay');
+    const editmap = document.getElementById('editmapbutton');
+    const editwarning = document.getElementById('editwarning');
+    const attributionLink = document.getElementById('attributton');
+    const attributionList = document.getElementById('attrilist');
+    const overlay = document.getElementById('overlay');
 
     editmap.addEventListener('click', function(event) {
         editwarning.style.display = 'flex';

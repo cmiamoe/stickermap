@@ -1,3 +1,5 @@
+// noinspection JSNonASCIINames
+
 const Standard = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 const StandardAtt = `&copy; <a class="uri" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors`
 
@@ -10,13 +12,13 @@ const HumanitarianAtt = `&copy; <a class="uri" href="https://www.openstreetmap.o
                         <br>Tiles style by <a class="uri" href="https://www.hotosm.org/">Humanitarian OSM Team</a>,
                         <br>hosted by <a class="uri" href="https://openstreetmap.fr/">OpenStreetMap France</a>`
 
-var baseLayers = {
+const baseLayers = {
     "Mapnik (Alapértelmezett)": Standard,
     "Francia OSM (Részletes)": FranceStyle,
     "Humanitárius": Humanitarian
 };
 
-var stickerMarkers = L.markerClusterGroup({
+const stickerMarkers = L.markerClusterGroup({
     iconCreateFunction: function(cluster) {
 		return L.divIcon({ html: '<b class="leaflet-div-icon-text">' + cluster.getChildCount() + '</b>' });
 	}
@@ -31,7 +33,7 @@ const stickerIcon = L.icon({
     shadowAnchor: [0, 0]
 })
 
-var partialStickerMarkers = L.markerClusterGroup({
+const partialStickerMarkers = L.markerClusterGroup({
     iconCreateFunction: function(cluster) {
 		return L.divIcon({ html: '<b class="leaflet-div-icon-text">' + cluster.getChildCount() + '</b>' });
 	}
@@ -46,7 +48,7 @@ const partialIcon = L.icon({
     shadowAnchor: [0, 0]
 })
 
-var overlayLayers = {
+const overlayLayers = {
     "Matricák": stickerMarkers,
     "Dokumentálatlan Matricák": partialStickerMarkers
 };

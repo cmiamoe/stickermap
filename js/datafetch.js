@@ -62,14 +62,14 @@ function generatePopupContent(item, isCompleteOrCommunityFound, stickerStyle, fi
             </div>
             <div id="stickerclosed_${item.popup.image}" class="sticker-container" style="display: block;">
                 <img class="pending popupimg" src="${item.popup.image}" width="100%" 
-                     onload="document.getElementById('${item.popup.image}').remove();this.classList.remove('pending');">
+                     onload="document.getElementById('${item.popup.image}').remove();this.classList.remove('pending');" alt>
                 <img class="small-stickerimg" src="${stickerStyle}" width="15%" 
-                     onclick="window.toggleSticker('stickerclosed_${item.popup.image}', 'stickerexpanded_${item.popup.image}')">
+                     onclick="window.toggleSticker('stickerclosed_${item.popup.image}', 'stickerexpanded_${item.popup.image}')" alt>
             </div>
             <div id="stickerexpanded_${item.popup.image}" class="sticker-container" style="display: none;">
-                <img class="popupimg" src="${stickerStyle}" width="100%">
+                <img class="popupimg" src="${stickerStyle}" width="100%" alt>
                 <img class="small-stickerimg" src="${item.popup.image}" width="15%" 
-                     onclick="window.toggleSticker('stickerclosed_${item.popup.image}', 'stickerexpanded_${item.popup.image}')">
+                     onclick="window.toggleSticker('stickerclosed_${item.popup.image}', 'stickerexpanded_${item.popup.image}')" alt>
             </div>
         </div>
         ${finderInfo}`;
@@ -80,10 +80,10 @@ function generatePopupContent(item, isCompleteOrCommunityFound, stickerStyle, fi
         <h3>${item.popup.title}</h3>
         <p class="popupdesc">${item.popup.address}</p>
         <div class="missingdata">
-            <img src="/icons/sad.svg">
+            <img src="/icons/sad.svg" alt>
             <p class="missinginfo">Ez a matrica nincs dokumentálva,<br>
             ha megtaláltad, <a class="missinginfo" href="#" 
-            onclick="editwarning.style.display = 'block';overlay.style.display = 'block';event.stopPropagation();">jelezd</a>!</p>
+            onclick="editwarning.style.display = 'flex';overlay.style.display = 'block';event.stopPropagation();">jelezd</a>!</p>
         </div>
     </div>`;
 }
@@ -93,4 +93,4 @@ function generateSpinnerBlades() {
 }
 
 // Call the function
-fetchAndProcessData();
+fetchAndProcessData().then();

@@ -95,6 +95,8 @@ a.leaflet-control-layers-toggle {
     font-weight: 500 !important;
     line-height: 130% !important;
 }
+
+/*noinspection ALL*/
 .selectedbaselayerstyle {
     background-image: url(/icons/tick.svg) !important;
     background-repeat: no-repeat !important;
@@ -117,6 +119,7 @@ a.leaflet-control-layers-toggle {
     line-height: 130% !important;
 }
 
+/*noinspection ALL*/
 .overlaystyle {
     cursor: pointer;
     padding-right: 12px !important;
@@ -176,7 +179,7 @@ a.leaflet-control-layers-toggle {
     background-image: url(/icons/copyright.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    box-shadow: 0px 3px 4.9px 0px rgba(0, 0, 0, 0.10), 0px 1px 2.1px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.25);
     margin-right: 16px;
     margin-bottom: 16px;
     width: 32px;
@@ -185,7 +188,7 @@ a.leaflet-control-layers-toggle {
     border-radius: 7px;
 }
 section.attribution-list {
-    background-color: #EDF3FF !important;
+    background-color: #F3FBDE !important;
     position: fixed !important;
     bottom: 0 !important;
     right: 16px !important;
@@ -193,7 +196,7 @@ section.attribution-list {
     margin-bottom: 0 !important;
     border-radius: 16px 16px 0 0 !important;
     padding: 24px !important;
-    box-shadow: 0px 3px 4.9px 0px rgba(0, 0, 0, 0.10), 0px 1px 2.1px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 .attribution-header {
     font-family: 'Montserrat', sans-serif !important;
@@ -203,15 +206,16 @@ section.attribution-list {
     line-height: normal !important;
     margin-bottom: 4px !important;
     margin-top: 0 !important;
+    color: #394C0A !important;
 }
 .attribution-list {
-    color: #3F444F;
+    color: #394C0ACC;
     font-family: 'Figtree', sans-serif;
     font-weight: 500;
-    size: 14px;
+    font-size: 16px;
 }
 a.attribution-list {
-    color: #487DE6 !important;
+    color: #A7DC22 !important;
 }
 .bgloader {
     position: fixed;
@@ -222,6 +226,7 @@ a.attribution-list {
 .attribp {
     margin-top: 8px;
     margin-bottom: 0;
+    color: #394C0ACC;
 }
 
 .toprightcrap {
@@ -247,10 +252,9 @@ a.attribution-list {
 }
 
 .editwarningpopup {
-    box-shadow: 0px 3px 4.9px 0px rgba(0, 0, 0, 0.10), 0px 1px 2.1px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.25);
     border-radius: 24px;
-    border: 1px solid #CEDBF5;
-    background: #EDF3FF;
+    background: #F3FBDE;
 }
 
 .editwarningpopup a {
@@ -259,14 +263,11 @@ a.attribution-list {
 
 .editwarnbutton {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 24px;
-    margin-right: 28px;
-    margin-left: 28px;
+    margin: 0 28px 24px;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    background: #3673EE;
+    background: #A7DC22;
 }
 
 .editwarnbutton p {
@@ -282,19 +283,16 @@ a.attribution-list {
 }
 
 .editwarnheader {
-    padding-top: 28px;
-    padding-right: 28px;
-    padding-left: 28px;
-    padding-bottom: 12px;
+    padding: 28px 28px 12px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     gap: 8px;
 }
 
 .editwarnheader h1 {
     margin: 0;
-    color: #050B15;
+    color: #394C0A;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -305,7 +303,7 @@ a.attribution-list {
 
 .editwarnheader p {
     margin: 0;
-    color: #3F444F;
+    color: #394C0ACC;
     text-align: left;
     font-family: "Figtree", sans-serif;
     font-size: 16px;
@@ -323,7 +321,7 @@ a.attribution-list {
     flex-shrink: 0;
     border-radius: var(--button-radius);
     background-color: #FEFFFD;
-    box-shadow: 0px 3px 4.9px 0px rgba(0, 0, 0, 0.10), 0px 1px 2.1px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .stickercount {
@@ -331,15 +329,14 @@ a.attribution-list {
     justify-content: center;
     align-items: center;
     height: 32px;
-    padding: 12px;
-    padding-left: 32px;
+    padding: 12px 12px 12px 32px;
     flex-shrink: 0;
     border-radius: 16px;
     background-image: url(/icons/stickericon.svg);
     background-repeat: no-repeat;
     background-position: 20% 50%;
     background-color: #F3FBDE;
-    box-shadow: 0px 3px 4.9px 0px rgba(0, 0, 0, 0.10), 0px 1px 2.1px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 .stickercount p{
     color: #394C0A;
@@ -357,18 +354,18 @@ a.attribution-list {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    background-color: #DAE4F7;
+    background-color: #FAFFF0;
     border-radius: 16px;
-    padding: 16px 0px;
+    padding: 16px 0;
     margin-top: 20px;
 }
 .sticker-container {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 16px;
-    background-color: #DAE4F7;
+    background-color: #FAFFF0;
     position: relative;
 }
 .small-stickerimg {
@@ -378,10 +375,10 @@ a.attribution-list {
     left: 10px;
 }
 a.uri {
-    color: #487DE6 !important;
+    color: #A7DC22 !important;
 }
 a.uri:visited {
-    color: #487DE6 !important;
+    color: #A7DC22 !important;
 }
 
 .relativeclosebutton {
